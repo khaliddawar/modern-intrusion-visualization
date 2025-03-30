@@ -1,6 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap');
 
 @layer base {
   :root {
@@ -97,5 +100,18 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-cyber {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 10px rgba(15, 160, 206, 0.7);
+  }
+
+  .hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
 }
